@@ -26,6 +26,10 @@ def index():
 
         if selected_category:
             news_data, error_message = fetch_news(selected_category, selected_count)
+    else:
+        # Fetch default news on initial GET request (optional)
+        # You can set a default category here if you want
+        pass
 
     return render_template('news.html',
                            categories=CATEGORIES,

@@ -6,7 +6,6 @@ from werkzeug.exceptions import HTTPException
 app = Flask(__name__)
 
 # Configuration
-# API_KEY = "YOUR_ACTUAL_API_KEY"  <- REMOVE THIS LINE
 CATEGORIES = ["business", "entertainment", "general", "health", "science", "sports", "technology"]
 DEFAULT_COUNT = 10
 API_KEY_NAME = "NEWS_API_KEY"  # Name of the environment variable for your API key
